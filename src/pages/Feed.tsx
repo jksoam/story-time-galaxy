@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Heart } from 'lucide-react';
 import StoryCard from '../components/Story/StoryCard';
 import { useToast } from '@/hooks/use-toast';
 

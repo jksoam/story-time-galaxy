@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Heart, Message, Share, User } from 'lucide-react';
+import { Heart, MessageCircle, Share, User } from 'lucide-react';
 
 interface Story {
   id: string;
@@ -103,7 +102,7 @@ const StoryCard: React.FC<StoryCardProps> = ({ story, onLike, onComment }) => {
             onClick={() => onComment(story.id)}
             className="flex items-center space-x-2 px-4 py-2 rounded-lg text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-all duration-200"
           >
-            <Message className="h-5 w-5" />
+            <MessageCircle className="h-5 w-5" />
             <span className="font-medium">{story.comments}</span>
           </button>
 
